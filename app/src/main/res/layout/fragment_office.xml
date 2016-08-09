@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_centerHorizontal="true"
+    >
+
+    <Button
+        android:id="@+id/button_office_setup_user"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_office_setup_user"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18pt"
+            android:text="@string/label_office_subject"
+            />
+
+        <Spinner android:id="@+id/spinner_office_subject"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

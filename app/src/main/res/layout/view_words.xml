@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/table_words_text"
+        android:textSize="@dimen/table_words_textsize"
+        android:id="@+id/view_words_word_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_toRightOf="@+id/view_words_word_id"
+        android:textSize="@dimen/table_words_textsize"
+        android:textColor="@color/table_words_text"
+        android:id="@+id/view_words_word" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_toRightOf="@+id/view_words_word"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/table_words_textsize"
+        android:textColor="@color/table_words_text"
+        android:id="@+id/view_words_language" />
+
+    <Button
+        android:id="@+id/button_view_words_delete_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_words_delete_word"
+        android:background="@color/button_background_view_words_edit_word"
+        android:layout_toLeftOf="@+id/button_view_words_edit_word"
+        android:layout_marginRight="4dp"
+        />
+
+    <Button
+        android:id="@+id/button_view_words_edit_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_words_edit_word"
+        android:background="@color/button_background_view_words_edit_word"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

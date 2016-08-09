@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_text">#0f0d99</color>
+    <color name="table_words_text">#0f0d99</color>
+    <color name="button_background">#0f0d99</color>
+    <color name="button_background_edit_example">#43cb8a</color>
+    <color name="button_background_view_words_edit_word">#989eff</color>
+    <color name="button_background_classroom_easy">#12c04f</color>
+    <color name="button_background_classroom_medium">#1a59b9</color>
+    <color name="button_background_classroom_hard">#620900</color>
+
+    <color name="button_text_classroom_easy">#4915ff</color>
+    <color name="button_text_classroom_medium">#dc9c10</color>
+    <color name="button_text_classroom_hard">#ffffff</color>
+
+    <color name="button_text_edit_example">#0f0d99</color>
+
+    <color name="background">#ffdb58</color>
+    <color name="background_classroom">#ffff80</color>
+    <color name="background_classroom_word">#ffbb58</color>
+    <color name="background_classroom_definition">#ffbb58</color>
+    <color name="background_classroom_example">#ffbb58</color>
+    <color name="background_fragment_user_info">#faab58</color>
+    <color name="background_table_definitions">#0065CA</color>
+    <color name="text_fragment_user_info_username">#0065CA</color>
+    <color name="text_fragment_user_info_subject">#0065CA</color>
+    <color name="text_fragment_user_info_label_subject">#0065CA</color>
+    <color name="text_table_definitions">#FF6400</color>
+    <color name="text_table_examples">#000000</color>
+    <color name="text_view_examples_word">#8c5000</color>
+    <color name="text_view_examples_definition">#0065CA</color>
+    <color name="text_edit_example_word">#8c5000</color>
+    <color name="text_edit_example_definition">#0065CA</color>
+    <color name="text_edit_definition_example">#0065CA</color>
+    <color name="text_edit_example_label_difficulty">#000000</color>
+    <color name="button_edit_view_examples">#000000</color>
+    <color name="button_text">#ff9c16</color>
+    <color name="actionbar_background">#ff9c16</color>
+    <color name="table_examples_button_add_exapmle">#989eff</color>
+
+    <color name="color1">#8c5000</color>
+    <color name="hint_text">#989eff</color>
+    <color name="hint_edit_example_example">#FF6400</color>
+    <color name="table_def_button_examples_background">#989eff</color>
+    <color name="table_def_button_edit_background">#989eff</color>
+</resources>

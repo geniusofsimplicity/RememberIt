@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/edit_example_dependent_definitions_word"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:textColor="@color/text_table_definitions"
+        android:contentDescription="Word"
+        />
+
+    <Button
+        android:id="@+id/edit_example_dependent_definitions_button_unlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_edit_example_dependent_definitions"
+        android:background="@color/table_def_button_examples_background"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/edit_example_dependent_definitions_definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_edit_example_definition"
+        android:textSize="24sp"
+        android:layout_below="@+id/edit_example_dependent_definitions_button_unlink"
+        />
+
+</RelativeLayout>

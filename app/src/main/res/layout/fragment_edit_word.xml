@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText android:id="@+id/edit_text_add_words_word"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="6dp"
+              android:hint="@string/hint_add_words_word"
+              android:textColorHint="@color/hint_text"
+        />
+
+    <Spinner android:id="@+id/spinner_add_words_language"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@+id/edit_text_add_words_word"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spinner_add_words_language"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/button_edit_word_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"
+            android:text="@string/button_save"
+            />
+
+        <Button
+            android:id="@+id/button_edit_word_save_and_write_def"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"
+            android:text="@string/button_save_and_proceed"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

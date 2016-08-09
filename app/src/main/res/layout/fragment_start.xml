@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+                >
+
+    <Button
+        android:id="@+id/fragment_start_words_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_open_words_menu"
+        />
+
+    <Button
+        android:id="@+id/fragment_start_definitions_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_open_definitions_menu"
+
+        />
+
+    <Button
+        android:id="@+id/fragment_start_school_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_enter_school"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_fragment_edit_definition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="7"
+        android:editable="false"
+        android:hint="@string/hint_add_definition_definition"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:layout_alignParentTop="true"
+        android:nextFocusForward="@+id/add_definition_word"
+        android:textColorHint="@color/hint_text" />
+
+    <AutoCompleteTextView
+        android:id="@+id/add_definition_word"
+        android:layout_width="460dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_definition"
+        android:dropDownWidth="wrap_content"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:hint="@string/hint_add_definition_word"
+        android:textColorHint="@color/hint_text" />
+
+    <Button
+        android:id="@+id/button_edit_definition_find_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_edit_definition_find_new"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_definition"
+        />
+
+    <Spinner
+        android:id="@+id/add_definition_part_of_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/add_definition_word"
+        android:nextFocusForward="@+id/add_definition_register"
+        />
+
+
+    <EditText
+        android:id="@+id/add_definition_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_definition_part_of_speech"
+        android:hint="@string/hint_add_definition_register"
+        android:nextFocusForward="@+id/add_definition_usability"
+        android:textColorHint="@color/hint_text" />
+
+    <EditText
+        android:id="@+id/add_definition_usability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_definition_register"
+        android:hint="@string/hint_add_definition_usability"
+        android:textColorHint="@color/hint_text" />
+
+
+    <Button
+        android:id="@+id/button_edit_definition_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button_background"
+        android:onClick="saveDefinition"
+        android:text="@string/button_save"
+        android:textColor="@color/button_text"
+        android:layout_below="@+id/add_definition_usability"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/edit_definition_dependent_examples"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_edit_definition_save"
+        android:paddingTop="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

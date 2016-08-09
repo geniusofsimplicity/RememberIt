@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/view_definitions_word"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:textColor="@color/text_table_definitions"
+        android:contentDescription="Word"
+        />
+
+    <TextView
+        android:id="@+id/view_definitions_part_of_speech"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_definitions_word"
+        android:layout_marginRight="6dip"
+        android:textColor="@color/text_table_definitions"
+        android:contentDescription="Part of speech"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/view_definitions_register"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_definitions_part_of_speech"
+        android:layout_marginRight="6dip"
+        android:textColor="@color/text_table_definitions"
+        android:contentDescription="Register"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/view_definitions_language"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_definitions_register"
+        android:contentDescription="Language"
+        android:textColor="@color/text_table_definitions"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/view_definitions_definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Definition"
+        android:textColor="@color/text_table_definitions"
+        android:textSize="24sp"
+        android:layout_below="@+id/view_definitions_word"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_view_definitions_view_examples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_definitions_view_examples"
+        android:background="@color/table_def_button_examples_background"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_definitions_definition" />
+
+    <Button
+        android:id="@+id/button_view_definitions_edit_definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_definitions_edit_definition"
+        android:background="@color/table_def_button_edit_background"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_definitions_definition" />
+
+
+</RelativeLayout>

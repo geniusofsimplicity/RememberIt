@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/edit_example_word"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Word"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/text_edit_example_word"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/edit_example_definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Definition"
+        android:layout_below="@+id/edit_example_word"
+        android:textColor="@color/text_edit_example_definition"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/edit_example_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/hint_edit_example_example"
+        android:layout_below="@+id/edit_example_definition"
+        android:textColorHint="@color/hint_edit_example_example"
+        />
+
+    <TextView
+        android:id="@+id/edit_example_label_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_difficulty"
+        android:contentDescription="Label"
+        android:textColor="@color/text_edit_example_definition"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/edit_example_difficulty"
+        android:layout_alignRight="@+id/edit_example_word"
+        android:layout_alignEnd="@+id/edit_example_word" />
+
+    <Spinner
+        android:id="@+id/edit_example_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/difficulty_array"
+        android:prompt="@string/edit_example_spinner_prompt"
+        android:layout_below="@+id/edit_example_example"
+        android:layout_toRightOf="@+id/edit_example_label_difficulty"
+        />
+
+    <Button
+        android:id="@+id/button_edit_example_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/button_background_edit_example"
+        android:onClick="saveExample"
+        android:text="@string/button_edit_example_save_example"
+        android:textColor="@color/button_text_edit_example"
+        android:layout_below="@+id/edit_example_difficulty"
+        android:layout_toRightOf="@+id/edit_example_label_difficulty"
+        android:layout_toEndOf="@+id/edit_example_label_difficulty" />
+
+    <ListView
+        android:id="@+id/edit_example_definitions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_edit_example_save"
+        android:paddingTop="6dp"
+        />
+
+</RelativeLayout>

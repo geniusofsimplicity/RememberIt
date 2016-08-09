@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+    <Button
+        android:id="@+id/fragment_start_words_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_open_words_menu"
+        />
+
+    <Button
+        android:id="@+id/fragment_start_definitions_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_open_definitions_menu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/fragment_start_school_button"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:background="@color/button_background"
+        android:textColor="@color/button_text"
+        android:text="@string/button_enter_school"
+        android:layout_below="@+id/fragment_start_words_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="84dp" />
+
+</RelativeLayout>

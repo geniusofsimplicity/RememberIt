@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/background_fragment_user_info"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/fragment_user_info_label_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_fragment_user_info_label_subject"
+            android:text="@string/label_fragment_user_info_user"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/fragment_user_info_user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_fragment_user_info_username"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/fragment_user_info_label_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_fragment_user_info_label_subject"
+            android:text="@string/label_fragment_user_info_subject"
+            android:textSize="24sp"
+
+            />
+
+        <TextView
+            android:id="@+id/fragment_user_info_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/text_fragment_user_info_subject"
+            android:textSize="24sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
